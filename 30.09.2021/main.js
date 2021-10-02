@@ -1,6 +1,7 @@
 const num = document.getElementsByClassName("num");
 const cleanAll = document.getElementById("clearAll");
 const deleteLastItem = document.getElementById("deleteLastItem");
+const operators = document.getElementsByClassName("operators");
 let one = document.getElementById("one");
 let two = document.getElementById("two");
 let three = document.getElementById("three");
@@ -12,32 +13,40 @@ let eight = document.getElementById("eight");
 let nine = document.getElementById("nine");
 let zero = document.getElementById("zero");
 let answer = document.getElementById("answer");
-function plus_number_to_number(num, num2) {
-  let sum = 0;
-  return (sum += num + num2);
-}
-function removal_number_from_number(num, num2) {
-  let sum = 0;
-  return (sum += num - num2);
-}
-function multiplication_number_from_number(num, num2) {
-  let sum = 0;
-  return (sum += num * num2);
-}
-function Division_number_from_number(num, num2) {
-  let sum = 0;
-  return (sum += num / num2);
+let nums = [];
+function clear_from_section() {
+  cleanAll.onclick = () => {
+    return (answer.innerHTML = "");
+  };
 }
 
-cleanAll.onclick = () => {
-  return (answer.innerHTML = "");
-};
+function View_in_section() {
+  for (let i = 0; i < num.length; i++) {
+    num[i].onclick = () => {
+      return (answer.innerHTML += `${num[i].value}`);
+    };
+  }
+}
 
-// for (let i = 0; i < num.length; i++) {
-//   num[i].onclick = () => {
-//     return (answer.innerHTML += `${num[i].value}`);
-//   };
-// }
-deleteLastItem.onclick = (srt) => {
-    
-};
+function Using_operators() {
+  switch (operators[i]) {
+    case "+":
+      console.log("its +");
+      break;
+    case "-":
+      console.log("its -");
+      break;
+    case "/":
+      console.log("its *");
+      break;
+    case "*":
+      console.log("its *");
+      break;
+    case "=":
+      console.log("its =");
+      break;
+  }
+}
+
+View_in_section();
+clear_from_section();
