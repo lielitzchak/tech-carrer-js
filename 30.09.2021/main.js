@@ -13,7 +13,7 @@ let eight = document.getElementById("eight");
 let nine = document.getElementById("nine");
 let zero = document.getElementById("zero");
 let answer = document.getElementById("answer");
-let nums = [];
+let numbers = [];
 function clear_from_section() {
   cleanAll.onclick = () => {
     return (answer.innerHTML = "");
