@@ -1,0 +1,42 @@
+:root {
+  --pink: #ffc0cb;
+  --blue: #0000ff;
+  --yellow: #ffff00;
+  ;
+}
+
+
+
+section {
+  width: 100cw;
+  height: 100ch;
+  display: grid;
+  grid-template-areas:
+    "bluee bluee bluee"
+    " rred yelllow piink"
+    "rred  grreen grreen";
+}
+
+.bluee {
+  background-color: aqua;
+  grid-area: bluee;
+}
+.piink {
+  background-color: #ffc0cb;
+  grid-area: piink;
+}
+.rred {
+  background-color: red;
+  grid-area: rred;
+}
+.yelllow { 
+   background-color: var(--yellow);
+  color: var(--blue);
+  grid-area: yelllow;
+  /* background-color: #ffff00; */
+}
+.grreen {
+  background-color: green;
+  grid-area: grreen;
+  
+}

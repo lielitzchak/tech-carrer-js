@@ -1,0 +1,31 @@
+* {
+  background-color: aliceblue;
+}
+
+ul {
+  display: flex;
+  height: 600px;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+ul li {
+  list-style: none;
+}
+
+/* #theOne {
+  background-color: blueviolet;
+flex-grow: 10;
+align-items: baseline;
+}
+.other {
+    flex-grow: 3;
+} */
+#theOne {
+    background-color: blueviolet;
+  /* flex-grow: 10; */
+  align-items: baseline;
+  flex-basis: 50%;
+  }
+  .other {
+      flex-basis: 25%;
+  }

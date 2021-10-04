@@ -1,0 +1,18 @@
+section {
+    position: relative;
+    border: slateblue;
+    animation-name: example;
+}
+
+#div1 {
+  height: 400px;
+  width: 400px;
+  background-color: saddlebrown;
+  position: absolute;
+}
+#div2 {position: absolute;
+    
+  height: 200px;
+  width: 300px;
+  background-color: salmon;
+}

@@ -1,0 +1,11 @@
+/* מתחת ל500 */
+
+body {
+  background-color: pink;
+  /* background-image: url(photo-1581091878330-f5cf2a3b1564.jpg); */
+}
+nav {
+  height: 5%;
+  width: 5%;
+  background-color: pink;
+}
