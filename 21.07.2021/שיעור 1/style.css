@@ -1,0 +1,21 @@
+/* מעל 500
+
+body {
+  background-image: url(backg.jpg);
+}
+
+nav {
+  opacity: 50%;
+  width: 100%;
+  height: 10%;
+  background-color: pink;
+}
+section {
+  display: flex;
+  flex-direction:row-reverse;
+}
+div {
+  background-color: black;
+  height: 900px;
+  width: 500px;
+} */

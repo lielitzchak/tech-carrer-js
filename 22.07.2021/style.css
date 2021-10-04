@@ -1,0 +1,78 @@
+body {
+  background-color: burlywood;
+}
+:root {
+  --red: #ff0000;
+  --white: #ffffff;
+  --black: #000000;
+  --pink: #ff33cc;
+  --yellow: #ffff66;
+  --blue: #0000ff;
+  --green: #00b33c;
+}
+/* @media screen and (max-width: 426px) {
+  body {
+    background-image: url(https://images.unsplash.com/photo-1496861083958-175bb1bd5702?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zmxvd2VyJTIwZmllbGR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  }
+  section {
+    display: flex;
+  }
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+  #pink {
+    background-color: var(--pink);
+  }
+  #red {
+    background-color: var(--red);
+  }
+  #green {
+    background-color: var(--green);
+  }
+  #blue {
+    background-color: var(--blue);
+  }
+  #yellow {
+    background-color: var(--yellow);
+  }
+  #black {
+    background-color: var(--black);
+  }
+
+  #white {
+    background-color: var(--white);
+  }
+} */
+
+section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+div {
+ 
+  height: 100px;
+  width: 200px;
+}
+#pink {
+  background-color: var(--pink);
+}
+#red {
+  background-color: var(--red);
+}
+#green {
+  background-color: var(--green);
+}
+#blue {
+  background-color: var(--blue);
+}
+#yellow {
+  background-color: var(--yellow);
+}
+#black {
+  background-color: var(--black);
+}
+
+#white {
+  background-color: var(--white);
+}

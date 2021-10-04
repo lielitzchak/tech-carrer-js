@@ -1,0 +1,43 @@
+* {
+  background-color: white;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+ul li {
+  list-style: none;
+  flex-wrap: wrap-reverse;
+}
+
+/* img {
+  width: 200px;
+  height: 100px;
+} */
+@media screen and (min-width: 1440px) {
+  article {
+    max-width: 30%;
+    display: inline-block;
+  }
+}
+article,
+img article p {
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  article {
+    max-width: 30%;
+    display: inline-block;
+  }
+}
+article,
+img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    max-width: 49%;
+  }
+}
