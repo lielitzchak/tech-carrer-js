@@ -1,0 +1,24 @@
+#hello {
+  background-color: blue;
+  width: 250px;
+  height: 250px;
+  /* transition: width 1s, height 1s; */
+}
+#hey {
+  background-color: coral;
+  width: 200px;
+  height: 200px;
+  transition:background-color 2s 1s ease-in-out ;
+}
+/* #hello:hover {
+  background-color: burlywood;
+  width: 400px;
+  height: 400px; 
+   transition: 2s; 
+} */
+#hello:hover + #hey {
+  background-color: fuchsia;
+  width: 250px;
+  height: 250px;
+  /* transition: 1s; */
+}

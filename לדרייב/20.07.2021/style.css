@@ -1,0 +1,29 @@
+* {
+  background-color: aliceblue;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+div {
+  height: 500%;
+  width: 500%;
+  display: flex;
+  display: inline-flex;
+}
+img {
+  width: 24%;
+}
+h1 {
+  font-size: medium;
+}
+.theDiv {
+  width: 249px;
+  height: 219pxx;
+  background-color: pink;
+}
