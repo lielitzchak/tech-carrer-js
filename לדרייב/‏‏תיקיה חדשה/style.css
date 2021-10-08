@@ -1,0 +1,37 @@
+.div {
+  /* border-bottom: solid darkkhaki;
+  background-color: rgb(94, 25, 158); */
+  width: 150px;
+  height: 150px;
+}
+
+.images {
+  width: 150px;
+  height: 150px;
+}
+
+#div1:hover {
+  background-image: url(/photo8.jpg);
+  transform: translate(50px, 100px);
+  /* background-color: burlywood;  */
+}
+#div2:hover {
+  background-image: url(/photo7.jpg);
+  transform: rotate(20deg);
+}
+#div3:hover {
+  background-image: url(/photo4.jpg);
+
+  transform: rotateX(150deg);
+}
+
+#div4:hover {
+  background-image: url(/photo3.jpg);
+
+  transform: rotateY(130deg);
+}
+#div5:hover {
+  background-image: url(/photo2.jpg);
+
+  transform: rotateZ(90deg);
+}
