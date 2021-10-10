@@ -8,9 +8,9 @@
 //   } else {
 //     while (number != 0) { prompt("try again");
 //       document.body.innerHTML = `
-//           //     <h1>good for you</h1>
-//           //     <h1>the smaller number is ${smallNumber}, and the biggest number is ${biggestNumber}</h1>
-//           //     `;
+//     <h1>good for you</h1>
+//     <h1>the smaller number is ${smallNumber}, and the biggest number is ${biggestNumber}</h1>
+//     `;
 //     }
 //   }
 // }
@@ -115,3 +115,62 @@
 //   }
 // }
 //! exercise 5- שאלת ריאיון
+// function repeatOnString() {
+//   for (let i = 1; i < 101; i++) {
+//     console.log("fizz".repeat(3));
+//     console.log("buzz".repeat(5));
+//     console.log("fizzbuzz".repeat(3, 5));
+//   }
+// }
+// repeatOnString();
+//! תרגילי מחלקה
+// !exercise 1
+class Teacher {
+  firstName;
+  LastName;
+  HourlyWage;
+  WorkingHoursPerWeek;
+  phone;
+  backHourlyWage = function () {
+    return console.log(this.HourlyWage);
+  };
+  //!exercise 2
+  constructor(firstName, LastName, HourlyWage, WorkingHoursPerWeek, phone) {
+    this.firstName = firstName;
+    this.LastName = LastName;
+    this.HourlyWage = HourlyWage;
+    this.WorkingHoursPerWeek = WorkingHoursPerWeek;
+    this.phone = phone;
+  }
+}
+//! exercise 3
+let obj1 = new Teacher("liel", "itzchak", 250, 87, 547080093);
+let obj2 = new Teacher("omer", "itzchak", 985, 897, 547080093);
+let obj3 = new Teacher("shilat", "itzchak", 5898, 9656, 547080093);
+const teachers = [];
+teachers.push(obj1, obj2, obj3);
+//! exercise4
+// console.table(teachers);
+
+//! exercise 5- אתגר
+// obj1.backHourlyWage();
+//! exercise 6
+//! exercise 7
+let firstName = document.getElementById("firstName");
+let lastName = document.getElementById("lastName");
+let HourlyWage = document.getElementById("HourlyWage");
+let HoursPerWeek = document.getElementById("WorkingHoursPerWeek");
+let phone = document.getElementById("phone");
+let btn = document.getElementById("btn");
+btn.onclick = (e) => {
+  e.preventDefault();
+  let NewTeacher = new Teacher(
+    firstName.value,
+    lastName.value,
+    HourlyWage.value,
+    HoursPerWeek.value,
+    phone.value
+  );
+
+  console.table(NewTeacher);
+};
