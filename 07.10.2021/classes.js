@@ -125,9 +125,9 @@ let birth_Input = document.getElementById("birth_Input");
 let pic_Input = document.getElementById("pic_Input");
 let btn = document.getElementById("btn");
 
-let pic = document.getElementById("asaf_test");
+// let pic = document.getElementById("asaf_test");
 
-let img = document.createElement("img");
+// let img = document.createElement("img");
 
 // function show_image(src, width, height, alt) {
 
@@ -150,6 +150,9 @@ class Student {
   clAcc;
   birth;
   pic;
+  returnString = function (name, lName, age, email, clAcc, birth, pic) {
+    name.toString;
+  };
   constructor(name, lName, age, email, clAcc, birth, pic) {
     this.name = name;
     this.lName = lName;
@@ -161,6 +164,7 @@ class Student {
   }
 }
 const Students = [];
+console.log("in first", Students);
 
 // let imges = document.createElement("img");
 // /*יצירת אלמנט תמונה מגאווה סקריפט ישירות לHTML */
@@ -175,18 +179,19 @@ const Students = [];
 
 btn.onclick = (e) => {
   e.preventDefault();
-  let newStudent = new Student(
-    name_Input.value,
-    lName_Input.value,
-    age_Input.value,
-    email_Input.value,
-    clAcc_Input.value,
-    birth_Input.value,
-    pic_Input
+  Students.push(
+    new Student(
+      name_Input.value,
+      lName_Input.value,
+      age_Input.value,
+      email_Input.value,
+      clAcc_Input.value,
+      birth_Input.value,
+      pic_Input
+    )
   );
-  Students.push(newStudent);
+  // console.log(Students);
   for (const iterator of Students) {
-    let x = 0;
     tbl.innerHTML += ` 
       <tr>
         <td>${iterator.name}</td>
@@ -195,21 +200,15 @@ btn.onclick = (e) => {
         <td>${iterator.email}</td>
         <td>${iterator.clAcc}</td>
         <td>${iterator.birth}</td>
-        <td><img id="imgTbl" src="" onclick="changTo(this)" alt=""></td>
+        <td><img id="imgTbl" src="${iterator.pic}" onclick="changTo(this)" alt=""></td>
       </tr><br>
     `;
-    x++;
-    console.log(x);
+    console.log(iterator);
   }
 };
-console.table(Students);
+// console.log(Students);
 
-//? לחיצה על שלח יוצרת מופע של תלמיד, עם אותם שדות.
-//? האובייקט יודפס ללוג.
-//? האובייקט יודפס למסך.
-// בעת לחיצה תלמיד נוסף לטבלה עם הנתונים.
 // צרו פונקציה במחלקה שמחזירה את הנתונים של התלמיד כסטרינג.
 // צרו פונקציה במחלקה שמדפיסה את הנתונים ללוג.
 // כאשר לוחצים על שלח, נוסף כפתור עם השם של התלמיד שנוצר, ובעת לחיצה מודפס ללוג המידע של האובייקט.
-// הוסיפו עיצוב.
-// יש לסיים את המחשבון.
+//! יש לסיים את המחשבון.
