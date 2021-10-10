@@ -179,32 +179,33 @@ console.log("in first", Students);
 
 btn.onclick = (e) => {
   e.preventDefault();
-  Students.push(
-    new Student(
-      name_Input.value,
-      lName_Input.value,
-      age_Input.value,
-      email_Input.value,
-      clAcc_Input.value,
-      birth_Input.value,
-      pic_Input
-    )
+  let newStudents = new Student(
+    name_Input.value,
+    lName_Input.value,
+    age_Input.value,
+    email_Input.value,
+    clAcc_Input.value,
+    birth_Input.value,
+    console.log(pic_Input)
   );
-  // console.log(Students);
-  for (const iterator of Students) {
-    tbl.innerHTML += ` 
+  Students.push(newStudents);
+  console.table(Students);
+  tbl.innerHTML += ` 
       <tr>
-        <td>${iterator.name}</td>
-        <td>${iterator.lName}</td>
-        <td>${iterator.age}</td>
-        <td>${iterator.email}</td>
-        <td>${iterator.clAcc}</td>
-        <td>${iterator.birth}</td>
-        <td><img id="imgTbl" src="${iterator.pic}" onclick="changTo(this)" alt=""></td>
-      </tr><br>
-    `;
-    console.log(iterator);
-  }
+        <td>${newStudents.name}</td>
+        <td>${newStudents.lName}</td>
+        <td>${newStudents.age}</td>
+        <td>${newStudents.email}</td>
+        <td>${newStudents.clAcc}</td>
+        <td>${newStudents.birth}</td>
+        <td><img id="imgTbl" src="${newStudents.pic}" onclick="changTo(this)" alt=""></td>
+        </tr>
+        
+        `;
+
+  // for (const iterator of Students) {
+  //   console.log(iterator);
+  // }
 };
 // console.log(Students);
 

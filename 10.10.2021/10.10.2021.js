@@ -124,18 +124,31 @@
 // }
 // repeatOnString();
 //! exercise 5- לוטו
-const USER_NUMBERS = [];
-Math.floor(Math.random() * 50);
+// const USER_NUMBERS = [];
+// USER_NAME = prompt("that is your name?");
+// let theRandom = [];
+// Math.floor(Math.random() * 50);
 
-for (let i = 0; i < 10; i++) {
-  //   number = Number(prompt(`choose a number חלק ${i}`));
-  //   USER_NUMBERS.push(number);
-}
-console.log(USER_NUMBERS);
-for (let i = 0; i < 50; i++) {
-  Math.floor(Math.random() * 50);
-}
+// for (let i = 0; i < 10; i++) {
+//   if (condition) {
+//   }
+//   USER_NUMBERS.push(Number(prompt(`choose a number חלק ${i}`)));
+// }
+// for (let j = 0; j < 10; j++) {
+//   theRandom.push(Math.floor(Math.random() * 10));
+  //   console.log("the random", theRandom);
+// }
 
+// USER_NUMBERS.forEach((k) => {
+//   theRandom.forEach((i) => {
+//     if (k === i) {
+//       let numb = 0;
+//       console.log("the same");
+//     }
+//   });
+// });
+// console.log("the numbers", USER_NUMBERS);
+// console.log("the random", theRandom);
 // TODO  משימות לולאה- לא סיימתי
 //! משימות לולאה- לא סיימתי
 // let BUILDING = { height: 450, width: 852, Floors: 95, Apartments: 4123 };
