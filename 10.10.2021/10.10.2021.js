@@ -123,54 +123,90 @@
 //   }
 // }
 // repeatOnString();
+//! exercise 5- לוטו
+const USER_NUMBERS = [];
+Math.floor(Math.random() * 50);
+
+for (let i = 0; i < 10; i++) {
+  //   number = Number(prompt(`choose a number חלק ${i}`));
+  //   USER_NUMBERS.push(number);
+}
+console.log(USER_NUMBERS);
+for (let i = 0; i < 50; i++) {
+  Math.floor(Math.random() * 50);
+}
+
+// TODO  משימות לולאה- לא סיימתי
+//! משימות לולאה- לא סיימתי
+// let BUILDING = { height: 450, width: 852, Floors: 95, Apartments: 4123 };
+
+// function obj_to_Run(objToRun) {
+//   for (const iterator of objToRun) {
+//     console.log(`${iterator.height}`);
+//   }
+// }
+
+// obj_to_Run(BUILDING);
+
 //! תרגילי מחלקה
 // !exercise 1
-class Teacher {
-  firstName;
-  LastName;
-  HourlyWage;
-  WorkingHoursPerWeek;
-  phone;
-  backHourlyWage = function () {
-    return console.log(this.HourlyWage);
-  };
-  //!exercise 2
-  constructor(firstName, LastName, HourlyWage, WorkingHoursPerWeek, phone) {
-    this.firstName = firstName;
-    this.LastName = LastName;
-    this.HourlyWage = HourlyWage;
-    this.WorkingHoursPerWeek = WorkingHoursPerWeek;
-    this.phone = phone;
-  }
-}
+// class Teacher {
+//   firstName;
+//   LastName;
+//   HourlyWage;
+//   WorkingHoursPerWeek;
+//   phone;
+//   backHourlyWage = function () {
+//     return console.log(this.HourlyWage);
+//   };
+//!exercise 2
+//   constructor(firstName, LastName, HourlyWage, WorkingHoursPerWeek, phone) {
+//     this.firstName = firstName;
+//     this.LastName = LastName;
+//     this.HourlyWage = HourlyWage;
+//     this.WorkingHoursPerWeek = WorkingHoursPerWeek;
+//     this.phone = phone;
+//   }
+// }
 //! exercise 3
-let obj1 = new Teacher("liel", "itzchak", 250, 87, 547080093);
-let obj2 = new Teacher("omer", "itzchak", 985, 897, 547080093);
-let obj3 = new Teacher("shilat", "itzchak", 5898, 9656, 547080093);
-const teachers = [];
-teachers.push(obj1, obj2, obj3);
+// let obj1 = new Teacher("liel", "itzchak", 250, 87, 547080093);
+// let obj2 = new Teacher("omer", "itzchak", 985, 897, 547080093);
+// let obj3 = new Teacher("shilat", "itzchak", 5898, 9656, 547080093);
+// const NEW_TEACHER = [];
+// NEW_TEACHER.push(obj1, obj2, obj3);
 //! exercise4
-// console.table(teachers);
+// console.table(NEW_TEACHER);
 
 //! exercise 5- אתגר
 // obj1.backHourlyWage();
 //! exercise 6
 //! exercise 7
-let firstName = document.getElementById("firstName");
-let lastName = document.getElementById("lastName");
-let HourlyWage = document.getElementById("HourlyWage");
-let HoursPerWeek = document.getElementById("WorkingHoursPerWeek");
-let phone = document.getElementById("phone");
-let btn = document.getElementById("btn");
-btn.onclick = (e) => {
-  e.preventDefault();
-  let NewTeacher = new Teacher(
-    firstName.value,
-    lastName.value,
-    HourlyWage.value,
-    HoursPerWeek.value,
-    phone.value
-  );
+// let firstName = document.getElementById("firstName");
+// let lastName = document.getElementById("lastName");
+// let HourlyWage = document.getElementById("HourlyWage");
+// let HoursPerWeek = document.getElementById("WorkingHoursPerWeek");
+// let phone = document.getElementById("phone");
+// let btn = document.getElementById("btn");
+// let tbaleForExercise7 = document.getElementById("tbaleForExercise7");
+// btn.onclick = (e) => {
+//   e.preventDefault();
+//   let NewTeacher = new Teacher(
+//     firstName.value,
+//     lastName.value,
+//     HourlyWage.value,
+//     HoursPerWeek.value,
+//     phone.value
+//   );
+//   console.table(NEW_TEACHER);
 
-  console.table(NewTeacher);
-};
+//   NEW_TEACHER.push(NewTeacher);
+//   for (const iterator of NEW_TEACHER) {
+//     tbaleForExercise7.innerHTML += `
+//     <tr>${iterator.firstName}</tr>
+//     <tr>${iterator.LastName}</tr>
+//     <tr>${iterator.HourlyWage}</tr>
+//     <tr>${iterator.WorkingHoursPerWeek}</tr>
+//     <tr>${iterator.phone}</tr>
+//     `;
+//   }
+// };
