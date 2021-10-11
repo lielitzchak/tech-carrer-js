@@ -51,23 +51,38 @@
 // ! part two
 class Node {
   constructor(data) {
+    // מיג את הקישור
     this.crs = data;
-    console.log();
+    // מציג את הבא בתור
     this.next = null;
+    // מציג את האחרון
+    this.tail = null;
+    // מציג את האורך
+    this.length = 0;
   }
 }
 class LinkedList {
-  constructor(data) {
+  constructor() {
     this.crs = null;
     this.next = null;
+    this.tail = null;
+    this.length = 0;
   }
-  addCrs(data) {
+  addCrsTHead(data) {
     let newNode = new Node(data);
-    if (!data) {
-      this.data = newNode;
+    if (!this.crs) {
+      this.crs = newNode;
       this.tail = newNode;
+      // console.log(newNode);
+    } else {
+      this.head.next = "fgv";
+      this.next = "kkkk";
+      this.crs = data;
     }
+    this.length++;
   }
 }
 let toLog = new LinkedList("hello");
+toLog.addCrsTHead(" ראשון");
+toLog.addCrsTHead(" שני");
 console.log(toLog);
