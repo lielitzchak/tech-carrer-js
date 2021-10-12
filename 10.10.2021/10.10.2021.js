@@ -132,7 +132,7 @@ btn.onclick = () => {
     }
   }
   alert("all good");
-  for (let i = 0; i < 50; i++) {
+  while (randomNumbers.length < 50) {
     let randomNumber = Math.floor(Math.random() * 100) + 1;
     if (randomNumbers.indexOf(randomNumber) == -1) {
       randomNumbers.push(randomNumber);
