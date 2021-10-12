@@ -110,42 +110,42 @@
 // console.log("the random", theRandom);
 // TODO  משימות לולאה- לא סיימתי
 
-//! exeresie 6   משימת לוטו
+//! exeresie 6   משימת לוטו עשיתי הכל!
 
-const inputNumbers = document.getElementsByClassName("numbers");
-const btn = document.getElementById("btn");
+// const inputNumbers = document.getElementsByClassName("numbers");
+// const btn = document.getElementById("btn");
 
-btn.onclick = () => {
-  let inputNumbers = [];
-  let randomNumbers = [];
-  for (let i = 0; i < inputNumbers.length; i++) {
-    let currentNumber = Number(inputNumbers[i].value);
-    let chack = (numbers =
-      currentNumber < 1 ||
-      currentNumber > 100 ||
-      inputNumbers.indexOf(currentNumber) != -1);
-    if (chack) {
-      alert(`${currentNumber} is not a good number' try again`);
-      return;
-    } else {
-      inputNumbers.push(currentNumber);
-    }
-  }
-  alert("all good");
-  while (randomNumbers.length < 50) {
-    let randomNumber = Math.floor(Math.random() * 100) + 1;
-    if (randomNumbers.indexOf(randomNumber) == -1) {
-      randomNumbers.push(randomNumber);
-    }
-  }
-  let counter = 0;
-  for (let i = 0; i < inputNumbers.length; i++) {
-    if (randomNumbers.indexOf(inputNumbers[i] != -1)) {
-      counter++;
-    }
-  }
-  alert(`you wan ${counter} point`);
-};
+// btn.onclick = () => {
+//   let inputNumbers = [];
+//   let randomNumbers = [];
+//   for (let i = 0; i < inputNumbers.length; i++) {
+//     let currentNumber = Number(inputNumbers[i].value);
+//     let chack = (numbers =
+//       currentNumber < 1 ||
+//       currentNumber > 100 ||
+//       inputNumbers.indexOf(currentNumber) != -1);
+//     if (chack) {
+//       alert(`${currentNumber} is not a good number' try again`);
+//       return;
+//     } else {
+//       inputNumbers.push(currentNumber);
+//     }
+//   }
+//   alert("all good");
+//   while (randomNumbers.length < 50) {
+//     let randomNumber = Math.floor(Math.random() * 100) + 1;
+//     if (randomNumbers.indexOf(randomNumber) == -1) {
+//       randomNumbers.push(randomNumber);
+//     }
+//   }
+//   let counter = 0;
+//   for (let i = 0; i < inputNumbers.length; i++) {
+//     if (randomNumbers.indexOf(inputNumbers[i] != -1)) {
+//       counter++;
+//     }
+//   }
+//   alert(`you wan ${counter} point`);
+// };
 //! משימות לולאה- לא סיימתי
 // let BUILDING = { height: 450, width: 852, Floors: 95, Apartments: 4123 };
 
