@@ -1,5 +1,5 @@
 //! exeresie 1 done
-// function x() {
+// function exeresie1() {
 //   let numberFromUser = Number(prompt("guess the number"));
 //   let biggestNum;
 //   let smallerNum;
@@ -19,16 +19,25 @@
 //   });
 //   smallNum = arr[0];
 //   bigNum = arr[arr.length - 1];
-//   document.body.innerHTML += `<h2>the biggest number is : ${bigNum}.<br>  
+//   document.body.innerHTML += `<h2>the biggest number is : ${bigNum}.<br>
 //     and the smaller number is: ${smallNum}.</h1>`;
 // }
+// exeresie1();
 //! exeresie 2
-
-
-
-
-
-// x();
+// let tempUser = prompt("write a numbers");
+// let counter = 0;
+// function exeresie2(numFromUser) {
+//   let numbersFromUser = [];
+//   numbersFromUser.push(numFromUser);
+//   while (numbersFromUser.length < 10) {
+//     if (numFromUser % 2 == 0) numbersFromUser.push(numFromUser);
+//     numFromUser = prompt("write a numbers again");
+//   }
+//   console.log(numbersFromUser);
+//   console.log(counter++);
+//   return numbersFromUser;
+// }
+// exeresie2(tempUser);
 //! exercise 4
 // let Fname = document.getElementById("UserName");
 // let btn4 = document.getElementById("btn");
