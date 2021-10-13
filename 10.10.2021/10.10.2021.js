@@ -1,27 +1,34 @@
-//! exeresie 1
-function x() {
-  let numberFromUser = Number(prompt("guess the number"));
-  let biggestNum;
-  let smallerNum;
-  let allNumbersFromUser = [];
-  let counter = 0;
-  while (numberFromUser !== 0) {
-    allNumbersFromUser.push(numberFromUser);
-    numberFromUser = Number(prompt("give one more number"));
-    console.log(allNumbersFromUser);
-    counter++;
-    console.log(counter);
-  }
+//! exeresie 1 done
+// function x() {
+//   let numberFromUser = Number(prompt("guess the number"));
+//   let biggestNum;
+//   let smallerNum;
+//   let allNumbersFromUser = [];
+//   let counter = 0;
+//   while (numberFromUser !== 0) {
+//     allNumbersFromUser.push(numberFromUser);
+//     numberFromUser = Number(prompt("give one more number"));
+//     counter++;
+//   }
 
-  ShowInWindowBigAndSmallNumber(allNumbersFromUser, smallerNum, biggestNum);
-}
-function ShowInWindowBigAndSmallNumber(arr, smallNum, bigNum) {
-  for (let i = 0; i < arr.length; i++) {
-    document.body.innerHTML += `<h2>the biggest number is : ${bigNum}.<br>  
-    and the smaller number is: ${smallNum}.</h1>`;
-  }
-}
-x();
+//   ShowInWindowBigAndSmallNumber(allNumbersFromUser, smallerNum, biggestNum);
+// }
+// function ShowInWindowBigAndSmallNumber(arr, smallNum, bigNum) {
+//   arr.sort((a, b) => {
+//     return a - b;
+//   });
+//   smallNum = arr[0];
+//   bigNum = arr[arr.length - 1];
+//   document.body.innerHTML += `<h2>the biggest number is : ${bigNum}.<br>  
+//     and the smaller number is: ${smallNum}.</h1>`;
+// }
+//! exeresie 2
+
+
+
+
+
+// x();
 //! exercise 4
 // let Fname = document.getElementById("UserName");
 // let btn4 = document.getElementById("btn");
