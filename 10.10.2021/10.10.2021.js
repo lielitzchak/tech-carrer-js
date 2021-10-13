@@ -38,6 +38,23 @@
 //   return numbersFromUser;
 // }
 // exeresie2(tempUser);
+//! exercise 3
+// function returnTheNumbers(numFromUser) {
+//   let num = Number(numFromUser);
+//   console.log(numFromUser);
+//   let random = [];
+//   while (random.length < 10) {
+//     let pushToArray = Math.floor(Math.random() * 2);
+//     random.push(pushToArray);
+//     console.log(random);
+//   }
+//   if (random.indexOf(num) > -1) {
+//     return console.log(true);
+//   } else {
+//     return console.log(false);
+//   }
+// }
+// returnTheNumbers(prompt("hello"));
 //! exercise 4
 // let Fname = document.getElementById("UserName");
 // let btn4 = document.getElementById("btn");
