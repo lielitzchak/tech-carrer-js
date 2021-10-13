@@ -48,3 +48,21 @@
 // o(1)
 //! exeresie 4 b
 //  o(n)
+// let arrayNotSort = [5, 4, 7, 2, 1];
+// function sortArray(arr) {
+//   let temp;
+//   for (let i = 0; i < arr.length; i++) {
+//     let isSorted = false;
+//     for (let j = 0; j < arr.length; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;
+//         isSorted = true;
+//       }
+//     }
+//     if (isSorted == false) break;
+//   }
+//   return arr;
+// }
+// console.log(sortArray(arrayNotSort));

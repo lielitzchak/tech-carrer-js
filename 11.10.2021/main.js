@@ -75,7 +75,7 @@ class LinkedList {
       this.tail = newNode;
       // console.log(newNode);
     } else {
-      this.head.next = "fgv";
+      this.head = "fgv";
       this.next = "kkkk";
       this.crs = data;
     }
