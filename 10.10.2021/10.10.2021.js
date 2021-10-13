@@ -1,56 +1,27 @@
 //! exeresie 1
-// let numberFromUser =+prompt("giva a number");
-// let smallerNumber;
-// let biggestNumber;
-// let arrWrongNumber = [];
-// let counter = 0;
-// function j(numberUser) {
-//   if (numberUser == 0) {
-//     console.log("wohoo");
-//   }
-//   while (numberUser == 0) {
-//     arrWrongNumber.push(numberUser);
-//     console.log("not wohoo");
-//     counter++;
-//   }
-// }
-// j(numberFromUser);
-// console.log("מגיב");
+function x() {
+  let numberFromUser = Number(prompt("guess the number"));
+  let biggestNum;
+  let smallerNum;
+  let allNumbersFromUser = [];
+  let counter = 0;
+  while (numberFromUser !== 0) {
+    allNumbersFromUser.push(numberFromUser);
+    numberFromUser = Number(prompt("give one more number"));
+    console.log(allNumbersFromUser);
+    counter++;
+    console.log(counter);
+  }
 
-// let numberFromUser = +prompt("giva a number");
-// let theNumbersFromUser = [];
-// let smallNumber;
-// let biggestNumber;
-
-// function getNUmber(numberUser) {
-//   let tem;
-//   while (numberUser != 0) {
-//     theNumbersFromUser.push(numberUser);
-//     numberUser = +prompt("give another number");
-//     console.log(theNumbersFromUser);
-//     tem = theNumbersFromUser.sort((a, b) => {
-//       return a - b;
-//     });
-//     biggestNumber = tem.length[-1];
-//     console.log(biggestNumber);
-//   }
-// document.body.innerHTML = `
-//       <h1>good for you</h1>
-//       <h1>the smaller number is ${b}, and the biggest number is ${a}</h1>
-//       `
-// else {
-//    (number != 0)
-//     prompt("try again");
-// }
-// getNUmber(numberFromUser);
-// getNUmber(numberFromUser)
-// }
-// document.body.innerHTML = `
-//   <h1>good for you</h1>
-//   <h1>the smaller number is ${smallNumber}</h1>
-//   <h1>the biggest number is ${biggestNumber}</h1>
-//   `;
-
+  ShowInWindowBigAndSmallNumber(allNumbersFromUser, smallerNum, biggestNum);
+}
+function ShowInWindowBigAndSmallNumber(arr, smallNum, bigNum) {
+  for (let i = 0; i < arr.length; i++) {
+    document.body.innerHTML += `<h2>the biggest number is : ${bigNum}.<br>  
+    and the smaller number is: ${smallNum}.</h1>`;
+  }
+}
+x();
 //! exercise 4
 // let Fname = document.getElementById("UserName");
 // let btn4 = document.getElementById("btn");
@@ -120,11 +91,11 @@
 //   let randomNumbers = [];
 //   for (let i = 0; i < inputNumbers.length; i++) {
 //     let currentNumber = Number(inputNumbers[i].value);
-//     let chack = (numbers =
+//     let check = (numbers =
 //       currentNumber < 1 ||
 //       currentNumber > 100 ||
 //       inputNumbers.indexOf(currentNumber) != -1);
-//     if (chack) {
+//     if (check) {
 //       alert(`${currentNumber} is not a good number' try again`);
 //       return;
 //     } else {
