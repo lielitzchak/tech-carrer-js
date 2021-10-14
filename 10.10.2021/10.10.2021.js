@@ -86,36 +86,7 @@
 //   }
 // }
 // repeatOnString();
-//! exercise 5- לוטו
-// const USER_NUMBERS = [];
-// USER_NAME = prompt("that is your name?");
-// let theRandom = [];
-// Math.floor(Math.random() * 50);
-
-// for (let i = 0; i < 10; i++) {
-//   if (condition) {
-//   }
-//   USER_NUMBERS.push(Number(prompt(`choose a number חלק ${i}`)));
-// }
-// for (let j = 0; j < 10; j++) {
-//   theRandom.push(Math.floor(Math.random() * 10));
-//   console.log("the random", theRandom);
-// }
-
-// USER_NUMBERS.forEach((k) => {
-//   theRandom.forEach((i) => {
-//     if (k === i) {
-//       let numb = 0;
-//       console.log("the same");
-//     }
-//   });
-// });
-// console.log("the numbers", USER_NUMBERS);
-// console.log("the random", theRandom);
-// TODO  משימות לולאה- לא סיימתי
-
-//! exeresie 6   משימת לוטו עשיתי הכל!
-
+//! exeresie 6
 // const inputNumbers = document.getElementsByClassName("numbers");
 // const btn = document.getElementById("btn");
 
@@ -150,17 +121,44 @@
 //   }
 //   alert(`you wan ${counter} point`);
 // };
-//! משימות לולאה- לא סיימתי
-// let BUILDING = { height: 450, width: 852, Floors: 95, Apartments: 4123 };
+//! משימות לולאה
+// todo that and three exeresie next
+// !exercise 1
+function PrintObject() {
+  let obj = {
+    height: 410,
+    width: 550,
+    floors: 4,
+    apartments: 16,
+  };
+}
+let BUILDING = { height: 450, width: 852, Floors: 95, Apartments: 4123 };
 
-// function obj_to_Run(objToRun) {
-//   for (const iterator of objToRun) {
-//     console.log(`${iterator.height}`);
+function obj_to_Run(objToRun) {
+  for (const iterator of objToRun) {
+    console.log(`${iterator.height}`);
+  }
+}
+
+obj_to_Run(BUILDING);
+//! exercise 2
+//! exercise 3
+// let theStringBuildings = [
+//   { Height: 450, width: 458, numberFloors: 6, numberApartments: 2 },
+//   { Height: 450, width: 458, numberFloors: 2, numberApartments: 2 },
+//   { Height: 450, width: 458, numberFloors: 6, numberApartments: 2 },
+// ];
+// function buildings(arr) {
+//   let temp = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].numberFloors > 5) {
+//       temp.push(arr[i]);
+//     }
 //   }
+//   console.log(temp);
+//   return temp;
 // }
-
-// obj_to_Run(BUILDING);
-
+// buildings(theStringBuildings);
 //! תרגילי מחלקה
 // !exercise 1
 // class Teacher {
