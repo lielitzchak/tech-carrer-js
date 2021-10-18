@@ -1,26 +1,27 @@
 //! 1
-class City {
-  fname;
-  lname;
-  num;
-  constructor(fname, lname , num) {
-    this.fname = fname;
-    this.lname = lname;
-    this.num = num;
-  }
-  static myFunction(num1) {
-    return Math.floor(Math.random() * num1);
-  }
-}
-class Cc extends City {
-  constructor(fname, lname, age) {
-    super(fname, lname);
-    this.age = age;
-  }
-  static myFunction1() {
-    super.myFunction;
-  }
-}
+// class City {
+//   fname;
+//   lname;
+//   num;
+//   constructor(fname, lname, num) {
+//     this.fname = fname;
+//     this.lname = lname;
+//     this.num = num;
+//   }
+//   static myFunction(num1) {
+//     return Math.floor(Math.random() * num1);
+//   }
+// }
+
+// class Cc extends City {
+//   constructor(fname, lname, age) {
+//     super(fname, lname);
+//     this.age = age;
+//   }
+//   static myFunction1() {
+//     super.myFunction;
+//   }
+// }
 // const some = new City("liel", "itzchak", 21);
 // console.table(some);
 // console.log(City.myFunction(some.num1));
