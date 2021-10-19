@@ -52,22 +52,21 @@ studentMap.set("liel", student3);
 
 for (const key of studentMap.keys()) {
   document.body.innerHTML += `<div class="divs" id="${key}" onmouseover="ShowOnOver(studentMap,this.id)" onmouseout="displayOnOver()">${key}</div><br><br>`;
-  //   console.log(key);
 }
 let divs = document.getElementsByClassName("divs");
 function ShowOnOver(map, key) {
-  console.log(map.get(key));
+  let div = document.getElementById(key);
+  div.style.width = "150px";
+  div.style.height = "150px";
+
+  div.innerHTML += `<br><br>${map.get(key).fname},${map.get(key).lname},${
+    map.get(key).age
+  }`;
+}
+function displayOnOver() {
   for (let i = 0; i < divs.length; i++) {
-    divs[i].style.width = "150px";
-    divs[i].style.height = "150px";
-    divs[i].innerHTML += `<br><br>${map.get(key).fname},${map.get(key).lname},${
-      map.get(key).age
-    }`; 
+    divs[i].style.width = "100px";
+    divs[i].style.height = "100px";
+    divs[i].innerHTML = divs[i].id;
   }
 }
-// function displayOnOver() {
-//   for (let i = 0; i < divs.length; i++) {
-//     divs[i].style.width = "100px";
-//     divs[i].style.height = "100px";
-//   }
-// }

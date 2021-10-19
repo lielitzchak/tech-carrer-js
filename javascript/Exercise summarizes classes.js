@@ -19,19 +19,35 @@ let oneCar = new Car(4, 450, "black");
 oneCar.printWindow();
 
 class Bus extends Car {
-  constructor() {
+   name;
+  constructor(Wheels, engine, color,name) {
     super(Wheels, engine, color);
+  }
+  callFromBus() {
+    super.printWindow();
   }
 }
 
 class PrivetCar extends Car {
-  constructor() {
+   name;
+  constructor(Wheels, engine, color,name) {
     super(Wheels, engine, color);
+  }
+  callFromPrivetCar() {
+    super.printWindow()
   }
 }
 
-class truck extends Car {
-  constructor() {
+class Truck extends Car {
+  name;
+  constructor(Wheels, engine, color, name) {
     super(Wheels, engine, color);
+    this.name = name;
+  }
+  callFromTruck() {
+    super.printWindow();
+    // console.log("hollo");
   }
 }
+let x = new Truck(5, 852, "pink", "liel truck");
+// console.log(x);
