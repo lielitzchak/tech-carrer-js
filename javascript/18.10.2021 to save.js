@@ -28,3 +28,46 @@
 //     alert("doesn't exist");
 //   }
 // };
+
+//! משימת סטודנטים
+class Student {
+  fname;
+  lname;
+  age;
+  GPA;
+  constructor(fname, lname, age, GPA) {
+    this.fname = fname;
+    this.lname = lname;
+    this.age = age;
+    this.GPA = GPA;
+  }
+}
+let student1 = new Student("shilat", "itzchak", 16, 100);
+let student2 = new Student("omer", "itzchak", 23, 100);
+let student3 = new Student("liel", "itzchak", 21, 100);
+let studentMap = new Map();
+studentMap.set("omer", student2);
+studentMap.set("shilat", student1);
+studentMap.set("liel", student3);
+
+for (const key of studentMap.keys()) {
+  document.body.innerHTML += `<div class="divs" id="${key}" onmouseover="ShowOnOver(studentMap,this.id)" onmouseout="displayOnOver()">${key}</div><br><br>`;
+  //   console.log(key);
+}
+let divs = document.getElementsByClassName("divs");
+function ShowOnOver(map, key) {
+  console.log(map.get(key));
+  for (let i = 0; i < divs.length; i++) {
+    divs[i].style.width = "150px";
+    divs[i].style.height = "150px";
+    divs[i].innerHTML += `<br><br>${map.get(key).fname},${map.get(key).lname},${
+      map.get(key).age
+    }`; 
+  }
+}
+// function displayOnOver() {
+//   for (let i = 0; i < divs.length; i++) {
+//     divs[i].style.width = "100px";
+//     divs[i].style.height = "100px";
+//   }
+// }
