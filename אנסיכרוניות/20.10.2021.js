@@ -68,11 +68,7 @@
 const ar = ["omer", "liel", "shilat", "bityamin", "malachi"];
 function arrayAndName(arr, someName) {
   return new Promise((resolve, reject) => {
-    if (arr.indexOf(someName) != -1) {
-      resolve("name exist");
-    } else {
-      reject("not exist");
-    }
+    arr.indexOf(someName) != -1 ? resolve("name exist") : reject("not exist");
   });
 }
 arrayAndName(ar, "liel")
