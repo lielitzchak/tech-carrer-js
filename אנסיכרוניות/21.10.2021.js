@@ -35,3 +35,4 @@ btnClick.onclick = () => {
     })
     .finally(console.log(random++));
 };
+
