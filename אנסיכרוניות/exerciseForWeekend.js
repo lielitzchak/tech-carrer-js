@@ -23,11 +23,13 @@
 //     console.log(rej);
 //   })
 //   .finally();
-
-// function returnPromise2() {
-// try{
-//     returnPromise()
-// }}
+// async function returnPromise2() {
+//   try {
+//     await returnPromise();
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 // !exeresie 1- part tow
 // function jkjkjk() {}
 // !exeresie 2
@@ -95,18 +97,22 @@
 //     this.type = type;
 //   }
 // }
-//!\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-// function errorFunction() {
-//   return "your object is not good";
-// }
 // function returnTheOlder(arr) {
-//   let max = arr[0]; // pukit
+//   let max = arr[0];
 //   for (const item of arr) {
 //     if (max.age < item.age) {
 //       max = item;
 //     }
 //   }
 //   return max;
+// }
+// function showTheImg() {
+//   return (sec.innerHTML = `<img id="imgLoading" src="./loading-cute.gif">`);
+// }
+// let imgLoading = document.getElementById("imgLoading");
+
+// function displayTheImg() {
+//   return (imgLoading.style.display = "none");
 // }
 
 // const DOGS = [];
@@ -115,31 +121,140 @@
 // let dog3 = new Dog("kay", 1, "dontKnow");
 // DOGS.push(dog1, dog2, dog3);
 
-// function allObject(arr) {
+// function allObject(arraysDogs) {
+//   showTheImg();
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
-//       resolve(returnTheOlder(arr));
-//       reject();
+//       arraysDogs
+//         ? resolve(returnTheOlder(arraysDogs))
+//         : reject("the details is not found. please try again");
 //     }, 2000);
 //   });
 // }
-// allObject(DOGS)
+// async function call_allObject(arr) {
+//   try {
+//     return await allObject(arr);
+//   } catch (error) {
+//     return error;
+//   }
+// }
+// call_allObject(DOGS)
 //   .then((res) => {
+//     sec.innerHTML = `the big is: ${res.name}, she is ${res.age} years old, and the type is ${res.type}`;
 //     console.log(res);
 //   })
 //   .catch((rej) => {
+//     sec.innerHTML = rej;
+//     console.log(rej + "hello everyone");
+//   })
+//   .finally(() => {
+//     return displayTheImg();
+//   });
+//!\\\\\\\\\\\\\\\\\\\\\\\\\\\\   second    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// let sec = document.getElementById("sec");
+
+// function checkOlder(arrDogs) {
+//   let max = arrDogs[0];
+//   for (const item of arrDogs) {
+//     if (max.age < item.age) {
+//       max = item;
+//     }
+//   }
+//   return max;
+// }
+// function showImg() {
+//   return (sec.innerHTML = `<img id="imgLoading" src="./loading-cute.gif">`);
+// }
+// let imgLoading = document.getElementById("imgLoading");
+
+// function displayImg() {
+//   return (imgLoading.style.display = "block");
+// }
+// function error() {
+//   return "error";
+// }
+// class Dog {
+//   name;
+//   age;
+//   type;
+//   constructor(name, age, type) {
+//     this.name = name;
+//     this.age = age;
+//     this.type = type;
+//   }
+// }
+// let dog1 = new Dog("hamburger", 8522, "Toller ");
+// let dog2 = new Dog("coffee", 10, "Toller ");
+// let dog3 = new Dog("freedom", 2, "Toller ");
+// const DOGS = [dog1, dog2, dog3];
+// function timingShow(arr) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (arr !== Array) {
+//         return reject(error());
+//       } else {
+//         return resolve(checkOlder(arr));
+//       }
+//     }, 500);
+//   });
+// }
+// async function call_timingShow(ar) {
+//   try {
+//     showImg();
+//     return await timingShow(ar);
+//   } catch (error) {
+//     return error;
+//   }
+// }
+
+// call_timingShow(8)
+//   .then((res) => {
+//     sec.innerHTML = `the big is: ${res.name}, she is ${res.age} years old, and the type is ${res.type}`;
+//     console.log(res);
+//   })
+//   .catch((rej) => {
+//     sec.innerHTML = `type error: ${rej}`;
 //     console.log(rej);
 //   })
 //   .finally(() => {});
-// async function returnInWindow(arr) {
-//   allObject(arr)
-//     .then((res) => {
-//       document.body.innerHTML += allObject(res) + "res";
-//     })
-//     .catch((rej) => {
-//       document.body.innerHTML += allObject(rej) + "rej";
-//     })
-//     .finally(() => {});
+
+//!\\\\\\\\\\\\\\\\\\\\\\\\\\\\   1    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// let names = new Map();
+// names.set("moshe", 45);
+// names.set("orly", 44);
+// names.set("omer", 23);
+// names.set("sav", 85);
+// names.set("liel", 21);
+// names.set("shilat", 16);
+// names.set("benjamin", 14);
+// names.set("malachi", 8);
+// names.set("orel", 2);
+// //  console.log(names.values());
+// //  console.log(names.keys());
+// for (let item of names) {
+//   item[0].length > 4 ? console.log(item[0]) : item[0];
 // }
 
-// returnInWindow(DOGS);
+let Apartments = new Map();
+Apartments.set(1, 4);
+Apartments.set(2, 6);
+Apartments.set(3, 10);
+Apartments.set(4, 20);
+
+// function newPromise() {
+//   return new Promise((resolve, reject) => {
+//     resolve(largestTenants(arr));
+//   });
+// }
+
+// function largestTenants(arr) {
+let max = Apartments[1];
+console.log(max);
+for (const item of Apartments) {
+  if (item[1] > max) {
+    max = item;
+  }
+}
+// }
+// console.log(largestTenants(Apartments));
