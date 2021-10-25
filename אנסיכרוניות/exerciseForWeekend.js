@@ -195,7 +195,7 @@
 //       } else {
 //         return resolve(checkOlder(arr));
 //       }
-//     }, 500);
+//     }, 3000);
 //   });
 // }
 // async function call_timingShow(ar) {
@@ -230,31 +230,55 @@
 // names.set("benjamin", 14);
 // names.set("malachi", 8);
 // names.set("orel", 2);
-// //  console.log(names.values());
-// //  console.log(names.keys());
+// console.log(names.values());
+// console.log(names.keys());
 // for (let item of names) {
 //   item[0].length > 4 ? console.log(item[0]) : item[0];
 // }
 
-let Apartments = new Map();
-Apartments.set(1, 4);
-Apartments.set(2, 6);
-Apartments.set(3, 10);
-Apartments.set(4, 20);
+let apartments = new Map();
 
-// function newPromise() {
-//   return new Promise((resolve, reject) => {
-//     resolve(largestTenants(arr));
-//   });
-// }
+apartments.set(2, 6);
+apartments.set(1, 444);
+apartments.set(3, 100);
+apartments.set(4, 20);
+console.log(apartments);
 
-// function largestTenants(arr) {
-let max = Apartments[1];
-console.log(max);
-for (const item of Apartments) {
-  if (item[1] > max) {
-    max = item;
+function newPromise(mapPara) {
+  return new Promise((resolve, reject) => {
+    let maxValue = 0;
+    let maxKey = 0;
+    setTimeout(() => {
+      for (let apartment of mapPara.keys()) {
+        if (mapPara.get(apartment) > maxValue) {
+          maxKey = apartment;
+          maxValue = mapPara.get(apartment);
+        }
+      }
+      maxKey > 0 ? resolve(maxKey) : reject("Allah akbar");
+    }, 300);
+  });
+}
+newPromise(apartments)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+async function call_newPromise(array) {
+  try {
+    return await newPromise(array);
+  } catch (error) {
+    return error;
   }
 }
-// }
-// console.log(largestTenants(Apartments));
+call_newPromise(apartments)
+  .then((rej) => {
+    console.log(rej);
+  })
+  .catch((res) => {
+    console.log(res);
+  })
+  .finally(() => {});
