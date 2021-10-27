@@ -1,0 +1,21 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100ch;
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}
+/* #imgLoading {
+  width: 100vw;
+  height: auto;
+} */
+#divForFlex {
+  /* padding: 4px; */
+  display: flex;
+  justify-content: space-evenly;
+}

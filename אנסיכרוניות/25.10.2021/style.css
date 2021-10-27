@@ -6,21 +6,5 @@
 div {
   margin: 13px;
   display: flex;
-  justify-content: space-between;
-}
-table,
-td,
-th {
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-table {
-  border-collapse: collapse;
-  width: 10%;
-}
-
-th,
-td {
-  padding: 15px;
+  justify-content: space-evenly;
 }
