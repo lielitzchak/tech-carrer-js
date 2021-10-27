@@ -100,7 +100,7 @@ const USERS = JSON.stringify([
     age: 20,
     name: {
       last: "Potter",
-      first: "Caitlin",
+      first: "liel",
     },
     email: "caitlin.potter@undefined.io",
     index: 8,
@@ -294,123 +294,50 @@ async function getCheckLastName(name) {
 // ! exeresie 6
 let formFrom = document.getElementById("formFromUser");
 let printTble = document.getElementById("printTble");
+let selectOption = document.getElementById("selectOption");
+let printToWindow = document.getElementById("printToWindow");
+let spinner = document.getElementById("spinner");
 formFrom.onclick = (ev) => {
   ev.preventDefault();
-  // let userName = document.getElementById("firstName").value;
-  // let userLName = document.getElementById("userLName").value;
-  // let userEmail = document.getElementById("userEmail");
-  // let userIndex = document.getElementById("userIndex").value;
-  // let userPhone = document.getElementById("userPhone").value;
-  // let _id = document.getElementById("_id");
-  // let userAge = document.getElementById("userAge").value;
-  // let textFromUser = document.getElementById("textFromUser").value;
-
-  let selectOption = document.getElementById("selectOption");
-  let printError = document.getElementById("printError");
-  switch (selectOption.value) {
-    case "_1id":
-      return checkId(textFromUser.value)
-        .then((res) => {
-          printTble.innerHTML += ` 
-          <tr>
-          <td>${res._id}</td>
-          <td>${res.age}</td>
-          <td>${res.name.first}</td>
-          <td>${res.name.last}</td>
-          <td>${res.email}</td>
-          <td>${res.index}</td>
-          <td>${res.phone}</td>
-          <td><img src="${res.picture}" alt=""></td>
-          </tr>`;
-          console.log(res);
-        })
-        .catch((rej) => {
-          console.log(rej);
-          printError.innerHTML = `${rej.massage}`;
-        })
-        .finally(() => {});
-    case "userAge":
-      return getCheckAge(textFromUser.value)
-        .then((res) => {
-          printTble.innerHTML += ` 
-          <tr>
-          <td>${res._id}</td>
-          <td>${res.age}</td>
-          <td>${res.name.first}</td>
-          <td>${res.name.last}</td>
-          <td>${res.email}</td>
-          <td>${res.index}</td>
-          <td>${res.phone}</td>
-          <td><img src="${res.picture}" alt=""></td>
-          </tr>`;
-          console.log(res);
-        })
-        .catch((rej) => {
-          console.log(rej);
-          printError.innerHTML = `${rej.massage}`;
-        })
-        .finally(() => {});
-
-    // case "firstName":
-    //   return getCheckFirstName(textFromUser.value)
-    //     .then((res) => {
-    //       printTble.innerHTML += `
-    //       <tr>
-    //       <td>${res._id}</td>
-    //       <td>${res.age}</td>
-    //       <td>${res.name.first}</td>
-    //       <td>${res.name.last}</td>
-    //       <td>${res.email}</td>
-    //       <td>${res.index}</td>
-    //       <td>${res.phone}</td>
-    //       <td><img src="${res.picture}" alt=""></td>
-    //       </tr>`;
-    //     })
-    //     .catch((rej) => {
-    //       printTble.innerHTML += `this id not found ${rej}`;
-    //     })
-    //     .finally(() => {});
-    // case "LastLName":
-    //   return getCheckLastName(textFromUser.value)
-    //     .then((res) => {
-    //       `
-    //     <tr>
-    //     <td>${res._id}</td>
-    //     <td>${res.age}</td>
-    //     <td>${res.name.first}</td>
-    //     <td>${res.name.last}</td>
-    //     <td>${res.email}</td>
-    //     <td>${res.index}</td>
-    //     <td>${res.phone}</td>
-    //     <td><img src="${res.picture}" alt=""></td>
-    //     </tr>`;
-    //       console.log(res);
-    //     })
-    //     .catch((rej) => {
-    //       console.log(rej);
-    //     })
-    //     .finally(() => {});
-    // case "email":
-    //   return getCheckEmail(textFromUser.value)
-    //     .then((res) => {
-    //       `
-    //     <tr>
-    //     <td>${res._id}</td>
-    //     <td>${res.age}</td>
-    //     <td>${res.name.first}</td>
-    //     <td>${res.name.last}</td>
-    //     <td>${res.email}</td>
-    //     <td>${res.index}</td>
-    //     <td>${res.phone}</td>
-    //     <td><img src="${res.picture}" alt=""></td>
-    //     </tr>`;
-    //       console.log(res);
-    //     })
-    //     .catch((rej) => {
-    //       console.log(rej);
-    //     })
-    //     .finally(() => {});
-    default:
-      return console.log("the default");
-  }
+  spinner.classList.remove("hidden");
+  clear();
+  showImg();
+  setTimeout(() => {
+    switch (selectOption.value) {
+      case "id":
+        let userPromise = checkId(textFromUser.value);
+        userPromise
+          .then((user) => {
+            display(user);
+          })
+          .catch(() => {
+            printToWindow.innerHTML = "error";
+          });
+        break;
+      case "age":
+      case "firstName":
+        let nam = CheckFirstName(textFromUser.value);
+        nam
+          .then((res) => {
+            display(res);
+          })
+          .catch(() => {});
+        console.log("first name");
+    }
+    spinner.classList.add("hidden");
+  }, 2000);
 };
+function display(user) {
+  printToWindow.innerText += user.name.first;
+  printToWindow.innerHTML += `<br>`;
+  printToWindow.innerText += user.name.last;
+  printToWindow.innerHTML += `<br>`;
+  printToWindow.innerText += user.email;
+  printToWindow.innerHTML += `<br>`;
+  printToWindow.innerHTML += `<img src=" ${user.picture}">
+ `;
+}
+function clear() {
+  printToWindow.innerHTML = "";
+}
+function showImg() {}
