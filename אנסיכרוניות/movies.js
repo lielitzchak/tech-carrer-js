@@ -65,7 +65,7 @@ getReturnJs()
   })
   .finally(() => {});
 // ! exeresie 2
-function lielFUNCTION() {
+function checkIfArrayExist() {
   return new Promise((resolve, reject) => {
     let temp = JSON.parse(movies).data;
     if (temp.length > 0) {
@@ -77,7 +77,7 @@ function lielFUNCTION() {
 }
 async function gatLielFUNCTION() {
   try {
-    return await lielFUNCTION();
+    return await checkIfArrayExist();
   } catch (error) {
     return { massage: error };
   }
