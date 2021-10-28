@@ -9,7 +9,8 @@ const USERS = JSON.stringify([
     email: "dollie.hensley@undefined.org",
     index: 0,
     phone: "+1 (904) 421-3160",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acaceed1f0e1cfa1eee67",
@@ -21,7 +22,8 @@ const USERS = JSON.stringify([
     email: "dolores.hunt@undefined.com",
     index: 1,
     phone: "+1 (967) 432-2905",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acacefedd0fe77874d78f",
@@ -33,7 +35,8 @@ const USERS = JSON.stringify([
     email: "milagros.pennington@undefined.net",
     index: 2,
     phone: "+1 (922) 492-2085",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acace6d3f84fc9b40849f",
@@ -45,7 +48,8 @@ const USERS = JSON.stringify([
     email: "myrtle.anderson@undefined.biz",
     index: 3,
     phone: "+1 (858) 404-3273",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acace06d24518b6419d23",
@@ -57,7 +61,8 @@ const USERS = JSON.stringify([
     email: "terry.york@undefined.co.uk",
     index: 4,
     phone: "+1 (816) 492-3475",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acace46f0669738455d6b",
@@ -69,7 +74,8 @@ const USERS = JSON.stringify([
     email: "effie.bridges@undefined.info",
     index: 5,
     phone: "+1 (856) 423-3786",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acace5ab5217354268532",
@@ -81,7 +87,8 @@ const USERS = JSON.stringify([
     email: "krista.walter@undefined.me",
     index: 6,
     phone: "+1 (849) 513-2888",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acaced68677a5dca08a9b",
@@ -93,7 +100,8 @@ const USERS = JSON.stringify([
     email: "gomez.buchanan@undefined.biz",
     index: 7,
     phone: "+1 (888) 494-2462",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acaceb7ece55cb38e546a",
@@ -105,7 +113,8 @@ const USERS = JSON.stringify([
     email: "caitlin.potter@undefined.io",
     index: 8,
     phone: "+1 (801) 514-3055",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "605acace98de45687c4c6279",
@@ -117,7 +126,8 @@ const USERS = JSON.stringify([
     email: "guzman.dillon@undefined.ca",
     index: 9,
     phone: "+1 (857) 407-2403",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
   {
     _id: "31605c6eb7ebc255946a9197",
@@ -129,7 +139,8 @@ const USERS = JSON.stringify([
     email: "liel.itzchak@undefined.ca",
     index: 10,
     phone: "54080093",
-    picture: "http://placehold.it/32x32",
+    picture:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80",
   },
 ]);
 let notJSON = JSON.parse(USERS);
@@ -315,6 +326,16 @@ formFrom.onclick = (ev) => {
           });
         break;
       case "age":
+        let promisAge = getCheckAge(textFromUser.value);
+        promisAge
+          .then((res) => {
+            display(res);
+          })
+          .catch(() => {
+            printToWindow.innerHTML = "error";
+          })
+          .finally(() => {});
+        break;
       case "firstName":
         let nam = CheckFirstName(textFromUser.value);
         nam
