@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+      }
+      input{
+        border-radius: 7px;
+      }
+      button{
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="nameUser">name</label> <br />
+      <input required id="nameUser" type="text" /><br />
+      <label for="lNameUser">last name</label> <br />
+      <input required id="lNameUser" type="text" /><br />
+      <label for="emailUser">email</label> <br />
+      <input required id="emailUser" type="text" /><br />
+      <label for="cityUser">city</label> <br />
+      <input required id="cityUser" type="text" /><br />
+      <br />
+      <select required id="select">
+        <option value="posts">posts</option>
+        <option value="comments">comments</option>
+        <option value="albums">albums</option>
+        <option value="photos">photos</option>
+        <option value="todo">to do list</option>
+        <option value="users">users</option>
+        <option selected disabled value="">select option</option>
+      </select>
+      <button id="btn">click to add</button>
+    </form>
+    <div id="show"></div>
+    <script src="./28.10.2021.js"></script>
+  </body>
+</html>
