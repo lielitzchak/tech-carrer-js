@@ -104,48 +104,45 @@
 //     },
 //   ],
 // };
-function showAllFamilyToLog(objFamily) {
-  //! the family is the arguments now
-  console.log(objFamily.name); //!print to log name in this iteration
-  printToWindow(objFamily); //! call to function again
-  if (objFamily.children) {
-    //! if to every child have a children (so its true) , you can get it
-    for (let i = 0; i < objFamily.children.length; i++) {
-      // ! loop on object's children's.
-      showAllFamilyToLog(objFamily.children[i]);
-    }
-  }
-}
-function printToWindow(object) {
-  document.body.innerHTML += `${object.name}<br>`;
-}
-// showAllFamily(family); //! call function  with arguments
-//! ###################################################################################################
+// function showAllFamilyToLog(objFamily) {
+//   console.log(objFamily.name);
+//   printToWindow(objFamily);
+//   if (objFamily.children) {
+//     for (let i = 0; i < objFamily.children.length; i++) {
+//       showAllFamilyToLog(objFamily.children[i]);
+//     }
+//   }
+// }
+// function printToWindow(object) {
+//   document.body.innerHTML += `${object.name}<br>`;
+// }
+// // showAllFamily(family);
+// //! ###################################################################################################
 
-const LINUX = {
-  name: "root",
-  children: [
-    { name: "bin" },
-    { name: "var", children: [{ name: "log" }] },
-    { name: "etc" },
-    {
-      name: "home",
-      children: [
-        {
-          name: "json",
-          children: [
-            { name: "document" },
-            { name: "download" },
-            { name: "music" },
-          ],
-        },
-        { name: "pat" },
-      ],
-    },
-    { name: "user", children: [{ name: "bin" }, { name: "lib" }] },
-    { name: "tmp" },
-    { name: "opt" },
-  ],
-};
-showAllFamilyToLog(LINUX);
+// const LINUX = {
+//   name: "root",
+//   children: [
+//     { name: "bin" },
+//     { name: "var", children: [{ name: "log" }] },
+//     { name: "etc" },
+//     {
+//       name: "home",
+//       children: [
+//         {
+//           name: "json",
+//           children: [
+//             { name: "document" },
+//             { name: "download" },
+//             { name: "music" },
+//           ],
+//         },
+//         { name: "pat" },
+//       ],
+//     },
+//     { name: "user", children: [{ name: "bin" }, { name: "lib" }] },
+//     { name: "tmp" },
+//     { name: "opt" },
+//   ],
+// };
+// showAllFamilyToLog(LINUX);
 //! ###################################################################################################
