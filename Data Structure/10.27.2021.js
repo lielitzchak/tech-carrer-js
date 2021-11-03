@@ -146,3 +146,23 @@
 // };
 // showAllFamilyToLog(LINUX);
 //! ###################################################################################################
+// let sortArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let numbToFind = 8;
+// function binaryTree(arr, numberTo) {
+//   let right = sortArray.slice(sortArray.length / 2);
+//   let left = arr.slice(0, arr.length);
+//   console.log(right, "all");
+  // console.log(left);
+//   if (right[0] == numberTo) {
+//     return true;
+//   }
+//   if (right[0] < numberTo) {
+    // binaryTree(right, numberTo);
+//     console.log(right);
+//   } else {
+    // binaryTree(left, numberTo);
+//   }
+// }
+// binaryTree(sortArray, numbToFind);
+//! ###################################################################################################
