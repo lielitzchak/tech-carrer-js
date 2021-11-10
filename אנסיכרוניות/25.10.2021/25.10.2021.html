@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <body>
+    <div>
+      <img class="hidden" src="./Ajux_loader.gif" id="spinner" alt="" />
+      <form>
+        <input id="textFromUser" type="text" />
+        <select id="selectOption">
+          <option value="id">id</option>
+          <option value="age">age</option>
+          <option value="firstName">first name</option>
+          <option value="LastLName">last name</option>
+          <option value="email">email</option>
+          <option value="index">index</option>
+          <option value="phone">phone</option>
+        </select>
+        <br />
+        <button id="formFromUser">click</button>
+      </form>
+      <h3 id="printToWindow"></h3>
+    </div>
+    <script src="./users.js"></script>
+  </body>
+</html>
