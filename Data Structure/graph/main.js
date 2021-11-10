@@ -3,24 +3,24 @@ class Graph {
   constructor() {
     this.contactWith = {};
   }
-  addNewVertex(key, data) {
+  addNewVertex(key) {
     if (!this.contactWith[key]) {
-      this.contactWith[key] = [data];
+      this.contactWith[key] = [];
     } else {
       console.log("error");
     }
   }
   connectVertex(vertex1, vertex2) {
     if (this.contactWith[vertex1]) {
-      console.log((this.contactWith[vertex1] = [{ friend: { vertex2 } }]));
-      console.log((this.contactWith[vertex2] = [{ friend: { vertex1 } }]));
+      this.contactWith[vertex1].push(vertex2);
+      this.contactWith[vertex2].push(vertex1);
     }
     console.log(vertex1, vertex2);
   }
 }
 
 let x = new Graph();
-x.addNewVertex("a", { name: "liel", age: 21 });
-x.addNewVertex("b", { name: "omer", age: 23 });
+x.addNewVertex("a");
+x.addNewVertex("b");
 x.connectVertex("a", "b");
 console.log(x.contactWith);
