@@ -153,16 +153,31 @@
 //   let right = sortArray.slice(sortArray.length / 2);
 //   let left = arr.slice(0, arr.length);
 //   console.log(right, "all");
-  // console.log(left);
+// console.log(left);
 //   if (right[0] == numberTo) {
 //     return true;
 //   }
 //   if (right[0] < numberTo) {
-    // binaryTree(right, numberTo);
+// binaryTree(right, numberTo);
 //     console.log(right);
 //   } else {
-    // binaryTree(left, numberTo);
+// binaryTree(left, numberTo);
 //   }
 // }
 // binaryTree(sortArray, numbToFind);
 //! ###################################################################################################
+async function callPromis(num) {
+  try {
+    return await promis(num);
+  } catch (error) {
+    return error;
+  }
+}
+
+callPromis(8)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((rej) => {
+    console.log(rej);
+  });
