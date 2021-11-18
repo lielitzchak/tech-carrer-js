@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  </head>
+  <body>
+    <main id="app"></main>
+    <script type="text/babel">
+      let example = document.getElementById("app");
+
+      function HelloWorld() {
+        return <h1 style={{ color: "pink" }}>hello world</h1>;
+      }
+      function Hello() {
+        return (
+          <div>
+            <h2 style={{ color: "blue" }}>hello </h2>
+            <MyName name="avi" color="black" />
+          </div>
+        );
+      }
+      function MyName(props) {
+        console.log(props);
+        return <h2 style={{ color: "yellow" }}>avi</h2>;
+      }
+      function PlayComp() {
+        return (
+          <section>
+            <HelloWorld />
+            <Hello />
+            <Books />
+          </section>
+        );
+      }
+
+      let Book = {
+        writer: "aschalew",
+        price: 500,
+        name: "five baloons",
+      };
+      let Book1 = {
+        writer: "lior",
+        price: 200,
+        name: "roni yaso",
+      };
+
+      let Book2 = {
+        writer: "keren",
+        price: 50,
+        name: "pacha",
+      };
+
+      function Books() {
+        return (
+          <div>
+            <h1>
+              {Book.writer}!{Book.price}!{Book.name}
+            </h1>
+            <h1>
+              {Book1.writer}!{Book1.price}!{Book1.name}
+            </h1>
+            <h1>
+              {Book2.writer}!{Book2.price}!{Book2.name}
+            </h1>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        //         <section>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <HelloWorld/>
+        // //   <Hello/>
+        // //   <MyName/>
+        // </section>,
+        <PlayComp />,
+        example
+      );
+    </script>
+  </body>
+</html>
