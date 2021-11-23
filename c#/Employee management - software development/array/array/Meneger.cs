@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace array
 {
-    internal class Chocolate
+    internal class Meneger
     {
     }
 }

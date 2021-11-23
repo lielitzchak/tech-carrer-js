@@ -36,7 +36,7 @@ namespace ConsoleApp2
                             Console.Write($"number of building: {building[i, j, k]}    ");
                             Console.WriteLine();
                         }
-                        Console.WriteLine("ood");
+                        Console.WriteLine("oגd");
 
                     }
                 }

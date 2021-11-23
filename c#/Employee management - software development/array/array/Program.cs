@@ -6,9 +6,27 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Building lod = new Building(2, 5, 9);
-            Console.WriteLine( lod.printAll() );
-            lod.printAll();
+            //Emploee liel = new Emploee("liel itzchak", 21, 547080093, "liel", "itzchak", "full stack");
+            //liel.Print();
+            Console.WriteLine("full name");
+            string fulltName = Console.ReadLine();
+            Console.WriteLine("age");
+            float age = float.Parse(Console.ReadLine());
+            Console.WriteLine("phone number");
+            float phoneNumber = float.Parse(Console.ReadLine());
+            Console.WriteLine("first name");
+            string firstName = Console.ReadLine();
+            //string lastName = Console.ReadLine();
+            Console.WriteLine("last name");
+            string lastName = Console.ReadLine();
+            Console.WriteLine("department");
+            string department = Console.ReadLine();
+            Emploee user = new Emploee(fulltName, age, phoneNumber, firstName, lastName, department);
+            user.Print();   
+            //Emploee user = new Emploee();
+            //Person liel = new Person("diamond factory", 5, 15978);
+            //Building lod = new Building(2, 5, 9);
+            //lod.printAll();
             //int[,] arrayNum = new int[8, 6];
             //string[,] arrayName = new string[3, 3]{
             //    {"liel" , "ofcvbnmer" , "Mya"},
