@@ -1,0 +1,15 @@
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\bin\Debug\net6.0\ExceptionProgramApp.exe
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\bin\Debug\net6.0\ExceptionProgramApp.deps.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\bin\Debug\net6.0\ExceptionProgramApp.runtimeconfig.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\bin\Debug\net6.0\ExceptionProgramApp.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\bin\Debug\net6.0\ref\ExceptionProgramApp.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\bin\Debug\net6.0\ExceptionProgramApp.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ExceptionProgramApp.csproj.AssemblyReference.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ExceptionProgramApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ExceptionProgramApp.AssemblyInfoInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ExceptionProgramApp.AssemblyInfo.cs
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ExceptionProgramApp.csproj.CoreCompileInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ExceptionProgramApp.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ref\ExceptionProgramApp.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ExceptionProgramApp.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\ExceptionProgramApp\ExceptionProgramApp\obj\Debug\net6.0\ExceptionProgramApp.genruntimeconfig.cache
