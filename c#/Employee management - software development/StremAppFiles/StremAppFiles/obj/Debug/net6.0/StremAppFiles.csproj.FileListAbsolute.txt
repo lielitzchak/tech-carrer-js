@@ -1,0 +1,15 @@
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\bin\Debug\net6.0\StremAppFiles.exe
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\bin\Debug\net6.0\StremAppFiles.deps.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\bin\Debug\net6.0\StremAppFiles.runtimeconfig.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\bin\Debug\net6.0\StremAppFiles.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\bin\Debug\net6.0\ref\StremAppFiles.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\bin\Debug\net6.0\StremAppFiles.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\StremAppFiles.csproj.AssemblyReference.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\StremAppFiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\StremAppFiles.AssemblyInfoInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\StremAppFiles.AssemblyInfo.cs
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\StremAppFiles.csproj.CoreCompileInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\StremAppFiles.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\ref\StremAppFiles.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\StremAppFiles.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\StremAppFiles\StremAppFiles\obj\Debug\net6.0\StremAppFiles.genruntimeconfig.cache
