@@ -94,7 +94,7 @@ void saveRandomNumber(int userNUmber)
         FileStream addNumber = new FileStream(@"C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\numbers-file.txt", FileMode.Append);
         using (StreamWriter addNum = new StreamWriter(addNumber))
         {
-            addNum.WriteLine(userNUmber);
+            addNum.Write(userNUmber);
         }
 
     }
@@ -105,8 +105,42 @@ void saveRandomNumber(int userNUmber)
 
 }
 
+void SaveIsSame(int num, string namesUser)
+{
+    Random numberandom = new Random();
+    int rnd = numberandom.Next(10);
+
+    if (rnd == num)
+    {
+        string userFild = $"user number:{num} user name: {namesUser}";
+
+        FileStream deateilUser = new FileStream(@"C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\numbers-file.txt", FileMode.Append);
+        using (StreamWriter writerer = new StreamWriter(deateilUser))
+        {
+
+            writerer.WriteLine(userFild);
+
+
+
+        }
+
+        Console.WriteLine("not good");
+    }
+
+}
+
 int userNumber = int.Parse(Console.ReadLine());
-saveRandomNumber(userNumber);
+while (userNumber<10)
+{
+
+}
+
+
+
+SaveIsSame(5, "liel");
+//int userNumber = int.Parse(Console.ReadLine());
+//saveRandomNumber(userNumber);
+
 //savenumber(6,8);
 //printCar();
 //readFiles();

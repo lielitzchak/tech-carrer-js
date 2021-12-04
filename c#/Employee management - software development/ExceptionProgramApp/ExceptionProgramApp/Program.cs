@@ -53,18 +53,35 @@ using ExceptionProgramApp;
 
 //רשימה זה סוג של מערך
 
-//List<string> family = new List<string>();
-//family.Add("itzchak");
-//family.Add("chekol");
-//family.Add("moshe");
-//family.Add("or");
-//family.Add("ashtamker");
-//family.Sort((a, b) => a.Length.CompareTo(b.Length));
+List<string> family = new List<string>();
+family.Add("itzchak");
+family.Add("chekol");
+family.Add("moshe");
+family.Add("or");
+family.Add("ashtamker");
+family.Sort((a, b) => a.Length.CompareTo(b.Length));
 
-//family.ForEach(x => Console.WriteLine(x));
+family.ForEach(x => Console.WriteLine(x));
 
 
 //משימת בנק 
+
+class AmoutIntComparer : IComparable
+{
+    private int Amount;
+
+    //public int Compare(Bank<int> u1, Bank<int> u2)
+    //{
+    //}
+
+    public int CompareTo(object? obj)
+    {
+        Bank newObj = (Bank)obj;
+        if (this.Amount < newObj.Amount) return 1;
+        //if (u1.Amount > u2.Amount) return -1;
+        return 0;
+    }
+}
 
 
 

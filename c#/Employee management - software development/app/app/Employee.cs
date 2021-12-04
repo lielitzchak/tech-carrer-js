@@ -12,6 +12,14 @@ namespace app
             this.job = job;
             this.salary = salary;
         }
+        protected override string PrintAll()
+        {
+            return $"{ base.PrintAll()},JOB: {this.job}, salary: {this.salary} ";
+        }
+        public void Print()
+        {
+            Console.WriteLine(this.PrintAll());
+        }
     }
 }
 

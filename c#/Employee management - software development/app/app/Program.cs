@@ -7,25 +7,28 @@ namespace App
     {
         static void Main(string[] arge)
         {
+            Employee work = new Employee("liel", 2000, "liel@gmail.com", "bla", 5224);
+           work.Print();
+            
             //string FullName, float Birth, string Email, string job, float salary
-            Employee[] employees = {
-                new Employee("liel itzchak",2000,"liel@gmail.com","full-stack",63326),
-                new Employee("omer itzchak",1999,"liel@gmail.com","full-stack",65632),
-                new Employee("ella itzchak",1645,"liel@gmail.com","full-stack",56336),
-                new Employee("mila itzchak",1840,"liel@gmail.com","full-stack",81354),
-                new Employee("nora itzchak",1388,"liel@gmail.com","full-stack",96366)
-            };
-            Console.WriteLine("beafor");
-            for (int i = 0; i < employees.Length; i++)
-            {
-                employees[i].PrintAll();
-            }
-            Console.WriteLine("after");
-            Array.Sort(employees);
-            for (int i = 0;i < employees.Length; i++)
-            {
-                employees[i].PrintAll();
-            }
+            //Employee[] employees = {
+            //    new Employee("liel itzchak",2000,"liel@gmail.com","full-stack",63326),
+            //    new Employee("omer itzchak",1999,"liel@gmail.com","full-stack",65632),
+            //    new Employee("ella itzchak",1645,"liel@gmail.com","full-stack",56336),
+            //    new Employee("mila itzchak",1840,"liel@gmail.com","full-stack",81354),
+            //    new Employee("nora itzchak",1388,"liel@gmail.com","full-stack",96366)
+            //};
+            //Console.WriteLine("beafor");
+            //for (int i = 0; i < employees.Length; i++)
+            //{
+            //    employees[i].PrintAll();
+            //}
+            //Console.WriteLine("after");
+            //Array.Sort(employees);
+            //for (int i = 0;i < employees.Length; i++)
+            //{
+            //    employees[i].PrintAll();
+            //}
             //Comare[] users = new Comare[] {
             //new Comare("malachi", 2014, "malachi@gmail.com"),
             //new Comare("binjamin", 2010, "minjamin@gmail.com"),
@@ -65,19 +68,29 @@ namespace App
 
 
         }
-        //struct Develop
-        //{
-        //    private string FName;
-        //    private string LName;
-        //    private float Age;
+        struct Develop
+        {
+            private string FName;
+            private string LName;
+            private float Age;
 
 
-        //    public Develop(string _FName, string _LName, int _Age)
-        //    {
-        //        this.FName = _FName;
-        //        this.LName = _LName;
-        //        this.Age = _Age;
-        //    }
-        //}
+            public Develop(string _FName, string _LName, int _Age)
+            {
+                this.FName = _FName;
+                this.LName = _LName;
+                this.Age = _Age;
+
+            }
+            struct Team
+            {
+                Develop develop1;
+                Develop develop2;
+                Develop develop3;
+                Develop develop4;
+                Develop develop5;
+
+            }
+        }
     }
 }

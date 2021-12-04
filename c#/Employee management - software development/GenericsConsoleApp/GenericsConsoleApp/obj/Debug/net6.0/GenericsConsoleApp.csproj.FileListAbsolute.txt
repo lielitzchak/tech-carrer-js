@@ -1,0 +1,15 @@
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\bin\Debug\net6.0\GenericsConsoleApp.exe
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\bin\Debug\net6.0\GenericsConsoleApp.deps.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\bin\Debug\net6.0\GenericsConsoleApp.runtimeconfig.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\bin\Debug\net6.0\GenericsConsoleApp.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\bin\Debug\net6.0\ref\GenericsConsoleApp.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\bin\Debug\net6.0\GenericsConsoleApp.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\GenericsConsoleApp.csproj.AssemblyReference.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\GenericsConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\GenericsConsoleApp.AssemblyInfoInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\GenericsConsoleApp.AssemblyInfo.cs
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\GenericsConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\GenericsConsoleApp.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\ref\GenericsConsoleApp.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\GenericsConsoleApp.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Employee management - software development\GenericsConsoleApp\GenericsConsoleApp\obj\Debug\net6.0\GenericsConsoleApp.genruntimeconfig.cache
