@@ -12,14 +12,8 @@ namespace ConsoleApp2
     {
      public   string _name;
 
-        //public Song()
-        //{
-        //}
 
-        public Song(string NameSong) 
-        { 
-            this._name = NameSong;
-        }
+        public Song(string NameSong) => _name = NameSong;
         public string SognName { get; set; }
         public override string GetType()
         {

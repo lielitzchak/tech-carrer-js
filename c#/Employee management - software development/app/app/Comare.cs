@@ -23,10 +23,10 @@ namespace app
             this.Birth = Birth;
             this.Email = Email;
         }
-        public void PrintAll()
+        protected virtual string PrintAll()
         {
-            string details = $" full name: {this.FullName}, birth: {this.Birth}, email:{this.Email} ";
-            Console.WriteLine(details);
+            return $" full name: {this.FullName}, birth: {this.Birth}, email:{this.Email} ";
+
         }
         public int CompareTo(object obj)
         {
