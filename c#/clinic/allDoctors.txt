@@ -1,0 +1,7 @@
+ id : 0          firsr name: fcd          last name: fcd          job:  cf          patients:452          birth: 524,
+ id : 0          firsr name: dfcd          last name: dcf          job:  s          patients:87          birth: 54,
+ id : 0          firsr name: tg          last name: tr          job:  gt          patients:54          birth: 54,
+ id : 0          firsr name: rf          last name: r          job:  dr          patients:564          birth: 63542,
+ id : 0          firsr name: liel          last name: itzchak          job:  dfcd          patients:545          birth: 4545,
+ id : 0          firsr name: omer          last name: itzchak          job:  3524          patients:54          birth: 52,
+ id : 0          firsr name: shilat          last name: itzchak          job:  csd          patients:5          birth: 52,
