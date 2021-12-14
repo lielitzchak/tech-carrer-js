@@ -1,1 +1,0 @@
-firsr name: shilat          last name: itzchak          job:  csd          patients:5          birth: 52

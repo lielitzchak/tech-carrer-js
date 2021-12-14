@@ -1,1 +1,0 @@
-firsr name: omer          last name: itzchak          job:  3524          patients:54          birth: 52

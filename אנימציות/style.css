@@ -1,0 +1,101 @@
+/* * {
+   background-color: rgb(216, 210, 189);   border-box 
+} */
+*
+body {
+  background-color: cornsilk;
+box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: pink;
+  }
+}
+ul li {
+  list-style: none;
+  display: inline;
+  padding: 3.1%;
+  background-color: rgba(109, 105, 109, 0.137);
+  position: sticky;
+}
+a {
+  text-decoration: none;
+  font-size: 74%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+div {
+  display: inline-block;
+}
+#oneDIV {
+  height: 100px;
+  width: 100px;
+  animation-name: liel;
+  background-color: pink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes liel {
+  0% {
+    background-color: rgb(203, 78, 207);
+  }
+  25% {
+    background-color: rgb(197, 71, 32);
+  }
+  75% {
+    background-color: slateblue;
+  }
+  100% {
+    background-color: rgb(37, 199, 185);
+  }
+}
+/* #oneDIV:hover {
+    background-color: rgb(104, 52, 43);
+    width: 200px;
+    height: 200px;
+    animation-name: oneDIV;
+    animation-direction: 2s;
+} */
+
+#towDiv {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+}
+#otherDiv {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+}
+
+.lineOfCat {
+  background-color: black;
+  width: 12px;
+  height: 2px;
+}
+#myDiv {
+  background-color: rgba(59, 40, 165, 0.555);
+  height: 40px;
+  width: 270px;
+}
+#example {
+  color: white;
+}
+.allLorem {
+  border-top: solid;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.myDiv {
+    width: 220px;
+    height: 20px;
+  background-color: yellow;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  div .myDiv {
+    display: none;
+  }
+}
+

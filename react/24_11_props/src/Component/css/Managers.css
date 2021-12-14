@@ -1,0 +1,20 @@
+.Managers {
+  display: flex;
+}
+.Managers {
+  background-color: rgba(7, 7, 63, 0.849);
+  width: 100%;
+  padding: 2%;
+}
+.Managers article {
+  margin-left: 2%;
+  background-color: rgba(128, 128, 128, 0.534);
+  width: 30%;
+}
+.Managers img {
+  width: 100%;
+}
+.Managers h2,
+.Managers p {
+  text-align: center;
+}

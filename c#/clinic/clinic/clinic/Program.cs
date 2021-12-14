@@ -1,5 +1,40 @@
 ﻿using clinic;
 List<Doctor> doctortsList = new List<Doctor>();
+void menu()
+{
+    try
+    {
+        Console.WriteLine("1. Add doctor\n2. display doctor\n3. Add patients to doctor \n4. show all doctors \n5. Patient schedule ");
+        int userNum = int.Parse(Console.ReadLine());
+        int id = 0;
+        switch (userNum)
+        {
+            case 1:
+                addDoctor(id);
+                id++;
+                break;
+            case 2:
+                displayDoctor();
+                break;
+            case 3:
+                addPatients();
+                break;
+            case 4:
+                Console.WriteLine("number 4");
+                break;
+            case 5:
+                patientSchedule();
+                break;
+
+        }
+
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("you have to write a number");
+    }
+    menu();
+}
 void saveAllDoctors(int id, Doctor doctor)
 {
     FileStream fs = new FileStream(@$"C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\allDoctors.txt", FileMode.Append);
@@ -84,44 +119,22 @@ void patientSchedule()
             diary[i, 7] = 0;
             string toPrint = $"||the patients in this day is : { diary[i, j] }      ";
             Console.Write(toPrint);
+            if (diary[i, j] < 5)
+            {
+                underFivePatients();
+
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine();
+
+        menu();
     }
-    menu();
 }
-void menu()
+
+void underFivePatients()
 {
-    try
+    if(diary[i, j] < 5)
     {
-        Console.WriteLine("1. Add doctor\n2. display doctor\n3. Add patients to doctor \n4. show all doctors \n5. Patient schedule ");
-        int userNum = int.Parse(Console.ReadLine());
-        int id = 0;
-        switch (userNum)
-        {
-            case 1:
-                addDoctor(id);
-                id++;
-                break;
-            case 2:
-                displayDoctor();
-                break;
-            case 3:
-                addPatients();
-                break;
-            case 4:
-                Console.WriteLine("number 4");
-                break;
-            case 5:
-                patientSchedule();
-                break;
-
-        }
-
     }
-    catch (FormatException)
-    {
-        Console.WriteLine("you have to write a number");
-    }
-    menu();
-}
+
 menu();
