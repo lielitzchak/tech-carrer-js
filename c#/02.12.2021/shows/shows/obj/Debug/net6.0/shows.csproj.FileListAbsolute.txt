@@ -1,0 +1,15 @@
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\bin\Debug\net6.0\shows.exe
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\bin\Debug\net6.0\shows.deps.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\bin\Debug\net6.0\shows.runtimeconfig.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\bin\Debug\net6.0\shows.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\bin\Debug\net6.0\ref\shows.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\bin\Debug\net6.0\shows.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\shows.csproj.AssemblyReference.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\shows.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\shows.AssemblyInfoInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\shows.AssemblyInfo.cs
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\shows.csproj.CoreCompileInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\shows.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\ref\shows.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\shows.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\02.12.2021\shows\shows\obj\Debug\net6.0\shows.genruntimeconfig.cache

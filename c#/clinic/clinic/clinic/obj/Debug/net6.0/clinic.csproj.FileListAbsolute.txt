@@ -1,0 +1,15 @@
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\bin\Debug\net6.0\clinic.exe
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\bin\Debug\net6.0\clinic.deps.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\bin\Debug\net6.0\clinic.runtimeconfig.json
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\bin\Debug\net6.0\clinic.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\bin\Debug\net6.0\ref\clinic.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\bin\Debug\net6.0\clinic.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\clinic.csproj.AssemblyReference.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\clinic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\clinic.AssemblyInfoInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\clinic.AssemblyInfo.cs
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\clinic.csproj.CoreCompileInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\clinic.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\ref\clinic.dll
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\clinic.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\clinic\clinic\clinic\obj\Debug\net6.0\clinic.genruntimeconfig.cache

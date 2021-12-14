@@ -1,36 +1,27 @@
 ﻿using System;
-
-namespace Series
+using System.Collections.Generic;
+namespace SeriesApp
 {
-    public class SeriesCalss : IComparable
+    public class Series:IComparable
     {
-        private string name;
-        private string genre;
-        private int episodes;
-        public SeriesCalss(string _name, string _genre, int _episodes)
-        {
-            name = _name;
-            genre = _genre;
-            episodes = _episodes;
+       private string name;
+       private string genre;
+       private int episode;
 
+       public Series (string name, string janer, int episode)
+        {
+            this.name = name;
+            this.genre = genre;
+            this.episode = episode;
         }
+        
 
-        public int CompareTo(object? obj)
+        public  int CompareTo (object obj)
         {
-            SeriesCalss ser = (SeriesCalss)obj;
-            if (ser.episodes > this.episodes)
-            {
-                return 1;
-            }
-            if (ser.episodes < this.episodes)
-            {
-                return -1;
-            }
+             Series show = (Series) obj;
+            if(show.episode < this.episode) return 1;
+            if(show.episode > this.episode) return -1;
             return 0;
-
-        }
-      public  void addMove() 
-        {
 
         }
     }

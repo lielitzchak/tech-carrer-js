@@ -1,0 +1,15 @@
+C:\cSharpAll\grades\grades\grades\bin\Debug\net6.0\grades.exe
+C:\cSharpAll\grades\grades\grades\bin\Debug\net6.0\grades.deps.json
+C:\cSharpAll\grades\grades\grades\bin\Debug\net6.0\grades.runtimeconfig.json
+C:\cSharpAll\grades\grades\grades\bin\Debug\net6.0\grades.dll
+C:\cSharpAll\grades\grades\grades\bin\Debug\net6.0\ref\grades.dll
+C:\cSharpAll\grades\grades\grades\bin\Debug\net6.0\grades.pdb
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\grades.csproj.AssemblyReference.cache
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\grades.GeneratedMSBuildEditorConfig.editorconfig
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\grades.AssemblyInfoInputs.cache
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\grades.AssemblyInfo.cs
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\grades.csproj.CoreCompileInputs.cache
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\grades.dll
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\ref\grades.dll
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\grades.pdb
+C:\cSharpAll\grades\grades\grades\obj\Debug\net6.0\grades.genruntimeconfig.cache
