@@ -1,0 +1,19 @@
+Username: liel itzchak
+Birth Year: 2000
+Email: liel@gmail.com
+
+
+Username: oemr itzchak
+Birth Year: 1999
+Email: omer@gmail.com
+
+
+Username: itzchak gete
+Birth Year: 1994
+Email: itzchak@gmail.com
+
+
+Username: orly chekol
+Birth Year: 1988
+Email: orly@gmail.com
+
