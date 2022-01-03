@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dataDB" Class="DogDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=liel-itzchak;Initial Catalog=dataDB;Integrated Security=True;Pooling=False" SettingsObjectName="LINQtoSQLaplication.Properties.Settings" SettingsPropertyName="dataDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Dog" Member="Dogs">
+    <Type Name="Dog">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bread" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "71fecc08-5e2a-4cc3-b951-3737ae3053a0": {
+      "ProjectGuid": "71fecc08-5e2a-4cc3-b951-3737ae3053a0",
+      "DisplayName": "LinqConsole",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
