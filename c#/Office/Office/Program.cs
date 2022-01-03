@@ -22,20 +22,36 @@ namespace Office
             //DeleteEmployee(connectionString);
             //PrintAllDataMangers(connectionString);
             //AddNewManegers(connectionString);
-            UpadteDetailesManegers(connectionString);
+            //UpadteDetailesManegers(connectionString);
+            DeleteMangers(connectionString);
             Console.ReadLine();
             ;
+        }
+
+        public static void DeleteMangers(string connectionString)
+        {
+            Console.WriteLine("UD you wand to delete?");
+            int id = int.Parse(Console.ReadLine());
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = $@"DELETE FROM Mangers WHERE Id={id};";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();  
+                conn.Close();
+
+            }
         }
         public static void UpadteDetailesManegers(string connectionString)
         {
             Console.WriteLine("id to update?");
             int ID = int.Parse(Console.ReadLine());
-            using (SqlConnection connectionDB = new SqlConnection(connectionString)) 
+            using (SqlConnection connectionDB = new SqlConnection(connectionString))
             {
                 connectionDB.Open();
 
                 Console.WriteLine("Full Name");
-                string First_Name = Console.ReadLine(); 
+                string First_Name = Console.ReadLine();
                 Console.WriteLine(" Last name");
                 string Last_name = Console.ReadLine();
                 Console.WriteLine("Birthday");
@@ -45,8 +61,8 @@ namespace Office
 
                 string query = $@"UPDATE Mangers
                                                   SET First_Name='{First_Name}',Last_Name='{Last_name}',Birthday='{Birthday}' , ClassWork='{classWork}'
-                                                  WERE Id={ID};";
-                SqlCommand command = new SqlCommand(query,connectionDB);
+                                                  WHERE Id={ID};";
+                SqlCommand command = new SqlCommand(query, connectionDB);
                 command.ExecuteNonQuery();
                 connectionDB.Close();
             }
@@ -216,6 +232,7 @@ namespace Office
                 string query = $@"UPDATE Employees
                                                SET Full_Name = '{First_Name}' , Birthday = '{Birthday}' , Email = '{Email}' , Salary={Salary}
                                                WHERE Id = {ID};";
+
                 SqlCommand commend = new SqlCommand(query, connection);
                 commend.ExecuteNonQuery();
                 connection.Close();
