@@ -6,3 +6,11 @@ C:\Users\lieli\source\project in work C#\Office\Office\obj\Debug\Office.csproj.S
 C:\Users\lieli\source\project in work C#\Office\Office\obj\Debug\Office.csproj.CoreCompileInputs.cache
 C:\Users\lieli\source\project in work C#\Office\Office\obj\Debug\Office.exe
 C:\Users\lieli\source\project in work C#\Office\Office\obj\Debug\Office.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Office\Office\bin\Debug\Office.exe.config
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Office\Office\bin\Debug\Office.exe
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Office\Office\bin\Debug\Office.pdb
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Office\Office\obj\Debug\Office.csproj.AssemblyReference.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Office\Office\obj\Debug\Office.csproj.SuggestedBindingRedirects.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Office\Office\obj\Debug\Office.csproj.CoreCompileInputs.cache
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Office\Office\obj\Debug\Office.exe
+C:\Users\lieli\OneDrive\שולחן העבודה\javascript\c#\Office\Office\obj\Debug\Office.pdb
