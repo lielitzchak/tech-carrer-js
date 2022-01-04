@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Office
-
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             List<Mangers> listMangers = new List<Mangers>();
+            List<contractor> listContractor = new List<contractor>();
             //List<Employee> listEmployees = new List<Employee>();
             string connectionString = @"Data Source=liel-itzchak;Initial Catalog=OfficeDataB;Integrated Security=True;Pooling=False";
             //PrintAllData(connectionString);
@@ -20,14 +20,47 @@ namespace Office
             //AddNewEmployee(connectionString);
             //UpadteDetailes(connectionString);
             //DeleteEmployee(connectionString);
-            //PrintAllDataMangers(connectionString);
+            PrintAllDataMangers(connectionString);
             //AddNewManegers(connectionString);
             //UpadteDetailesManegers(connectionString);
-            DeleteMangers(connectionString);
+            //DeleteMangers(connectionString);
+            //PrintAllDataContractor(connectionString);
             Console.ReadLine();
             ;
         }
-
+        public static void PrintAllDataContractor(string connectionString)
+        {
+            try
+            {
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                {
+                    sqlConnection.Open();
+                    string query = @"SELECT * FROM contractor";
+                    SqlCommand cmd = new SqlCommand(query, sqlConnection);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            string data = $@"{reader.GetString(1) },{reader.GetInt32(2)},{reader.GetString(3)},{reader.GetString(4)}";
+                            Console.WriteLine(data);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("no data");
+                    }
+                    sqlConnection.Close();
+                }
+            }
+            //catch (SqlException)
+            //{
+            //}
+            catch (Exception)
+            {
+                Console.WriteLine("Exception from me  :(");
+            }
+        }
         public static void DeleteMangers(string connectionString)
         {
             Console.WriteLine("UD you wand to delete?");
@@ -37,7 +70,7 @@ namespace Office
                 conn.Open();
                 string query = $@"DELETE FROM Mangers WHERE Id={id};";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.ExecuteNonQuery();  
+                cmd.ExecuteNonQuery();
                 conn.Close();
 
             }
@@ -76,22 +109,25 @@ namespace Office
                 connection.Open();
                 string query = @"SELECT * FROM Manegers";
                 SqlCommand commend = new SqlCommand(query, connection);
-                commend.ExecuteNonQuery();
                 SqlDataReader reader = commend.ExecuteReader();
                 if (reader.HasRows)
                 {
                     while (reader.Read())
                     {
-                        //string data = $@"{reader.GetString(1)} , {reader.GetString(2)} , {reader.GetValue(3)}, {reader.GetString(4)}";
-                        Console.WriteLine("data");
+                        string data = $@"{reader.GetString(1)} , {reader.GetString(2)} , {reader.GetString(3)}, {reader.GetString(4)},{reader.GetString(5)}";
+                        Console.WriteLine(data);
                     }
                 }
                 else
                 {
-                    Console.WriteLine("sorry' no data");
+                    Console.WriteLine("sorry, no data");
                 }
 
                 connection.Close();
+                //}
+                //catch (SqlException)
+                //{
+                //    Console.WriteLine("Sql Exception");
                 //}
                 //catch (Exception ex)
                 //{
@@ -212,7 +248,6 @@ namespace Office
 
 
         }
-
         public static void UpadteDetailesEmployee(string connectionString)
         {
             Console.WriteLine("What is the ID?");
@@ -238,7 +273,6 @@ namespace Office
                 connection.Close();
             }
         }
-
         public static void DeleteEmployee(string connectionString)
         {
             Console.WriteLine("What is the ID?");
@@ -256,7 +290,6 @@ namespace Office
 
 
         }
-
     }
 }
 
