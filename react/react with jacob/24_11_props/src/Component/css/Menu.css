@@ -1,0 +1,20 @@
+.Menus {
+  display: flex;
+  width: 100%;
+  background-color: #282c3449;
+  padding: 2%;
+  padding-top: 0;
+}
+.Menus article {
+  padding: 1%;
+  width: 100%;
+}
+.Menus img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  /* align: center; */
+}
+

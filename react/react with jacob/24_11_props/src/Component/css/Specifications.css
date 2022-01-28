@@ -1,0 +1,13 @@
+.Specification {
+  background-color: rgb(39, 38, 38);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 2px;
+  padding: 2%;
+  padding-left: 10%;
+}
+.Specification article {
+  width: 70%;
+  padding: 4%;
+}
